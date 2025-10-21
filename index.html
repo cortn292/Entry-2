@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jammin n' Manhattan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #88958D;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #434D42;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #434D42;
+            font-size: 1.1em;
+        }
+
+        .gallery {
+            column-count: 4;
+            column-gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #DDF2EB;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            break-inside: avoid;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .card-image {
+            width: 100%;
+            display: block;
+            background: #e0e0e0;
+            min-height: 200px;
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .card-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #606D5D;
+            margin-bottom: 8px;
+        }
+
+        .card-description {
+            color: #606D5D;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 1200px) {
+            .gallery {
+                column-count: 3;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                column-count: 1;
+            }
+        }
+    .back-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        text-decoration: none;
+        background-color: #434D42;
+        color: #DDF2EB;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        z-index: 1000;
+    }
+    .back-button:hover {
+        background-color: #69776F;
+    }
+    </style>
+</head>
+<body>
+   <a href="https://cortn292.github.io/c1i/" class="back-button">← Back to Home</a>
+  
+    <header>
+        <h1>Day Two</h1>
+        <p class="subtitle">Round two ya'll, again all images are done withing the same couple of days, with the "song of the day" being my most played song throughout those days.</p>
+    </header>
+
+    <div class="gallery">
+        <div class="card">
+            <img src="https://static.qobuz.com/images/covers/oa/gi/wtfjbh13egioa_600.jpg" class="no-hands">
+            <div class="card-content">
+                <h3 class="card-title">Song of the Day</h3>
+                <p class="card-description">Guabansexxx By Rauw Alejandro</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430252090265178244/IMG_0924.jpg?ex=68f9198f&is=68f7c80f&hm=49b144c0075db3f8a0096c4097da035b8e575704ffcbe80145c03896cb9383a9&=&format=webp&width=1744&height=1744" alt="Hyena" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Minion</h3>
+                <p class="card-description">Throwback to me spamming people I know with this damn Minion...</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430252117821751307/Untitled588_20251002150044.jpg?ex=68f91995&is=68f7c815&hm=edd34951f60a1a884ff6a6222df65b80acef2d775cb81075685836f8799f4f69&=&format=webp&width=1308&height=1744" alt="Moth" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Classroom Boredom</h3>
+                <p class="card-description">So I drew this during a class...I was paying attention I swear.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430254103753396316/IMG_0982.jpg?ex=68f91b6f&is=68f7c9ef&hm=98301ceacc353cb8f0f9471e775a88c8d2f512b182a6f5b34a6b96fd1f47a9ec&=&format=webp&width=800&height=500">
+            <div class="card-content">
+                <h3 class="card-title">Friendship Part 2</h3>
+                <p class="card-description">Spontaeneous night out with my friend in the city. It was fire.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430252275200163920/Untitled587_20251002141823.jpg?ex=68f919bb&is=68f7c83b&hm=ec055e2cf9f2268b6e6988616c45c166d1cfb35cf346adac96067297f53b467b&=&format=webp&width=1308&height=1744" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">I Was Bored Again</h3>
+                <p class="card-description">Another doodle in the same class...</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430252381710319636/IMG_1151.png?ex=68f919d4&is=68f7c854&hm=58495b5c1c1a795809a5edd481eaf92d83d734017b880ca6c157fd752f630574&=&format=webp&quality=lossless&width=1936&height=1692" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Meme</h3>
+                <p class="card-description">One of the best meme pictures right now, it perfectly explains how I've felt this entire semester.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430252414031626365/IMG_1080.jpg?ex=68f919dc&is=68f7c85c&hm=2e8f71a99c2377868c079c0bccebfce0ee5b214691800244f4076c08e2fee3db&=&format=webp&width=2048&height=1536" alt="Lake view" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Socializing is Important</h3>
+                <p class="card-description">Can you tell I got outside a lot....</p>
+            </div>
+        </div>
